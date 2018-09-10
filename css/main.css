@@ -1,0 +1,662 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   body, html {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        background-color: #eeeeee;
+  }
+    a {
+     font-weight: 700;
+     color: #222222;
+     text-decoration: none;
+
+     font-size: 1.2em;
+
+   }
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+
+   }
+   li {
+        text-align: center;
+         padding: 1em;
+         border-bottom: 1px solid #bdbdbd;
+   }
+   p {
+     font-size: 1em;
+     line-height: 1.4em;
+
+}
+
+img {
+
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+
+}
+
+h1 {
+  font-size: 1.3125em;
+  line-height: 1.375;
+
+}
+
+h2 {
+  font-size: 1em;
+}
+h3 {
+  font-size: .625em;
+}
+
+figure {
+
+}
+
+.btn {
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 2.5;
+  height: 2.5em;
+  width: 100%;
+  background-color: #ff1256;
+  box-shadow: 0 2px 2px 0 #d19aaa;
+  display: block;
+  margin-top: 10px;
+
+
+}
+
+input  {
+  width: 96%;
+  padding: 1px 6px;
+  height: 2.1em;
+  background-color: transparent;
+
+}
+
+
+/******Home moblie styling****************/
+/*===============Header==============*/
+
+.main-header {
+  width: 100%;
+}
+.logo {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 4.5em;
+  padding-top: 1.5em;
+  background-color: #222222;
+}
+nav {
+  width: 100%;
+  background-color: #dddddd;
+  }
+
+/**nav ul li{}==*/
+/*** =============Main Content ===============***/
+main {
+  width: 96%;
+  padding: 0 2%;
+  margin: auto;
+  clear: both;
+}
+/*** ============= Featured News Story ===============***/
+/**.hero-area {}**/
+
+.top-story {
+  width: 100%;
+}
+
+/**.top-img {}*/
+/*** ============= Sidebar ===============***/
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-about-us {
+  display: none;
+}
+.sidebar-faqs {
+  display: none;
+}
+/*** ============= News Feed ===============***/
+.feed {
+  width: 100%;
+
+}
+
+.feed-item {
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 1em 0;
+}
+
+.feed-img {
+  width: 45%;
+}
+.feed-info a {
+  font-size: 1em;
+}
+
+/*.feed-info h3{
+  width: 50%;
+  margin-left: 5px;
+}*/
+.feed-info p {
+  display: none;
+}
+/*** ============= Footer ===============***/
+
+footer {
+  width: 100%;
+  margin: auto;
+  padding-top: 2em;
+    border-top: 1px solid #bdbdbd;
+}
+
+.footer-logo {
+  width: 47.5%;
+  margin: auto;
+  background-color: #222222;
+  padding-top: 1em;
+}
+/************About Mobile Styling*******************/
+.contact-info {
+  width: 100%;
+}
+
+.contact-info ul {
+  padding: 0;
+}
+
+.contact-info ul li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  line-height: 2em;
+
+  text-align: left;
+  display: inline;
+  border-bottom: none;
+}
+.contact-info h1 {
+  margin-bottom: 0;
+  }
+
+.strong {
+  font-weight: 700;
+  font-size: 1em;
+}
+.team {
+  height: 300px;
+
+
+}
+.team-member {
+  margin: 0;
+  }
+  .team-img {
+    width: 50%;
+    margin: 0;
+  }
+  .team-name, .team-title {
+    width: 50%;
+    margin: 0;
+  }
+  .team-description {
+    display: none;
+  }
+/*********FAQ mobile styling*****/
+.faq-title {
+  font-size: 1.2em;
+}
+.faqs-item {
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 2em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+    /*========== tablet styles here ===================== */
+    /*************** header ****************************/
+    .main-header  {
+      margin: 0;
+      padding: 0 3%;
+      width: 100%
+    }
+    .main-header .header-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      width: 94%
+    }
+    .logo {
+        width: 40%;
+        float: left;
+    }
+     nav {
+        width: 60%;
+        float: left;
+        padding: 2.2em 0;
+    }
+    nav ul li {
+       display:inline;
+       padding-right: 6%;
+       border: none;
+     }
+    .nav-about {
+      width: 50%;
+      text-align: right;
+      margin: auto;
+      float: left;
+    }
+    .nav-faqs {
+     width: 50%;
+     text-align: left;
+     margin: auto;
+     float: left;
+}
+
+
+/******************* Featured Story **********************/
+.top-story {
+  width: 96%;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 2%;
+  float: left;
+}
+.top-image {
+  width: 57%;
+  margin: 0;
+  padding-right: 3%;
+  float: left;
+}
+.top-info {
+  width: 40%;
+  float: left;
+}
+/******************* Sidebar ******************/
+.sidebar {
+  clear: both;
+  width: 38%;
+  float: right;
+}
+.sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
+  display: block;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px;
+}
+
+
+/******************** News Feed ***************************/
+.feed {
+  width: 58%;
+  float: right;
+  border-right: 1px solid #bdbdbd;
+}
+.feed-img {
+  width: 35%;
+}
+.feed-info {
+  width: 57%;
+}
+.footer {
+  width: 100%;
+  clear: both;
+}
+.footer-logo {
+  width: 25%;
+  clear: both;
+}
+
+/********************* About Us *****************/
+.contact-info {
+  width: 37%;
+  float: left;
+}
+.mission {
+  clear: both;
+}
+.team {
+  width: 100%;
+}
+.team-img {
+  width: 21%;
+  float: left;
+}
+.team-name, .team-title {
+  width: 75%;
+  float: left;
+}
+}
+/*==================== Desktop Styles================================*/
+@media only screen and (min-width: 940px) {
+
+/************* Hero Area *********************/
+.hero-area {
+  width: 100%;
+}
+.top-story {
+  width: 62.5%;
+}
+
+.top-image, .top-info {
+  width: 100%;
+  padding: 0;
+}
+.sidebar {
+  clear: none;
+  width: 37.5%;
+  float: left;
+}
+/******************* News Feed *****************/
+.feed {
+  width: 100%;
+  clear: both;
+}
+.feed-img {
+  width: 22%;
+  float: left;
+}
+.feed-info {
+  width: 70%;
+  float: left;
+}
+.feed-info p {
+  display: block;
+}
+.feed-type {
+  clear: left;
+}
+/*************** Footer ***********************/
+.footer-logo {
+  width: 16%;
+}
+/*************** About ************************/
+.contact-info {
+  width: 42%;
+}
+.team-member {
+  width: 100%;
+}
+.team-img {
+  width: 25%;
+  float: left;
+}
+.team-name, .team-title, .team-description {
+  width: 75%
+  float: left
+}
+.team-description {
+  clear: both;
+  display: block;
+}
+/****************** FAQs ***********************/
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
