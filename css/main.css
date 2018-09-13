@@ -153,11 +153,14 @@ figure {
   width: 100%;
   box-shadow: 2px 2px 0 #d19aaa;
   display: block;
-
 }
-
-
-
+img {
+  width: 100%;
+  height: auto;
+}
+.last-item {
+     border-bottom: none;
+}
 
 /******Home moblie styling****************/
 /*===============Header==============*/
@@ -204,11 +207,15 @@ main {
   width: 100%;
   border-bottom: 1px solid #bdbdbd;
 }
-.top-img {
+.top-image {
   width: 100%;
   margin: 0;
-}
 
+}
+.top-image img {
+  width: 100%;
+  border: 1px solid black;
+}
 /*** ============= Sidebar ===============***/
 .sidebar {
   width: 100%;
@@ -216,7 +223,7 @@ main {
 
 .sidebar-newsletter {
 
-  padding: 0 10px 20px 10px;
+  /**padding: 0 10px 20px 10px;**/
   border-bottom: 1px solid #bdbdbd;
 }
 
@@ -230,13 +237,6 @@ main {
   padding: 5px 0;
 }
 
-/**not in sample
-input  {
-  width: 96%;
-  padding: 1px 6px;
-  height: 2.1em;
-  background-color: transparent;
-}**/
 .sidebar-about-us {
   display: none;
 }
@@ -258,11 +258,12 @@ input  {
 }
 .feed-img {
   float:left;
-  margin: 0;
-  padding-right: 3%;
+  margin-right: 3%;
   width: 45%;
+  border: 1px solid #bdbdbd;
 }
 .feed-item h2 {
+  line-height: 1em;
   margin: 0;
 }
 .feed-info a {
@@ -271,9 +272,7 @@ input  {
 .feed-info p {
   display: none;
 }
-.last-item {
-     border-bottom: none;
-}
+
 /*** ============= Footer ===============***/
 
 footer {
@@ -312,9 +311,11 @@ footer {
   border-bottom: none;
 }
 .contact-info h1 {
-  margin-bottom: 0;
+  line-height: 1.125;
   }
-
+.contact-info ul li {
+  line-height: 1.125;
+}
 .strong {
   font-weight: 700;
   font-size: 1em;
@@ -324,14 +325,31 @@ footer {
 }
 .team-member {
   margin: 0;
+  padding: 1em 0;
   }
   .team-img {
-    width: 50%;
-    margin: 0;
+    width: 40%;
+    padding-bottom: 40%;
+    float:left;
+    margin-right: 20px;
+    border: 1px solid #bdbdbd;
+  }
+  #team-img-jack {
+    background: url('../img/jack.png') center no-repeat;
+    background-size: cover;
+    }
+  #team-img-lana {
+    background: url('../img/lana.png') center no-repeat;
+    background-size: cover;
+  }
+  #team-img-willow {
+    background: url('../img/willow.png') center no-repeat;
+    background-size: cover;
   }
   .team-name, .team-title {
     width: 50%;
     margin: 0;
+    float:left;
   }
   .team-description {
     display: none;
@@ -341,6 +359,10 @@ footer {
 .faqs-item {
   border-bottom: 1px solid #bdbdbd;
   padding-bottom: 1em;
+}
+.faqs-item h2 {
+  font-weight: normal;
+  font-size: 1em;
 }
 
 /* ==========================================================================
@@ -476,19 +498,19 @@ footer {
 .top-story {
   width: 100%;
   /**not in sample**/
-
-  padding: 2%;
+  padding: 2% 2% 2% 0;
   float: left;
 }
 .top-image {
   width: 57%;
-  padding-right: 3%;
   float: left;
+  padding-right: 3%;
 }
 .top-info {
-  width: 40%;
+  width: 37%;
   float: left;
 }
+
 /******************* Sidebar ******************/
 .sidebar {
   clear: both;
@@ -497,7 +519,7 @@ footer {
 }
 .sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
   display: block;
-  padding: 0 0 20px 10px;/**missing**/
+  /**padding: 0 0 20px 10px;/**missing**/
 }
 .sidebar-about-us, .sidebar-faqs {
 border-bottom: 1px solid #bdbdbd;/**missig**/
@@ -519,7 +541,10 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   width: 100%;
   margin: 0;
 }
-
+.feed-info h2 {
+  font-size: 1.1em;
+  line-height: 1.2;
+  padding-right: 10px;
 }
 .footer-logo {
   width: 25%;/**30**/
@@ -543,18 +568,30 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   clear: both;
   border-top: 1px solid #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
-  padding: 2em 0;
+  padding: 1em 0 2em 0;
+}
+.mission h1, .team h1 {
+  font-size: 1.5em;
+  line-height: 1.125;
 }
 .team {
   width: 100%;
 }
+.team-member {
+  padding: 2em 0;
+}
 .team-img {
-  width: 21%;
+  width: 14%;
+  padding-bottom: 14%;
   float: left;
 }
 .team-name, .team-title {
-  width: 75%;
+  width: 69%;
   float: left;
+}
+.team-name {
+  font-size: 1.125em;
+  line-height: 1.125;
 }
 /**************** FAQ ***********************/
 .faq-title {
@@ -565,12 +602,10 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   color: #ff1256;
 }
 }
-/*==================== Desktop Styles================================*/
+/**==================== Desktop Styles================================**/
 @media only screen and (min-width: 940px) {
-
-/************* Hero Area *********************/
-.hero-area {
-  border-bottom: 1px solid #bdbdbd;
+.main-header-wrapper{
+  background-color: #dddddd;
 }
 .top-story {
   width: 60.5%;/**65**/
@@ -580,8 +615,17 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
 
 .top-image, .top-info {
   width: 100%;
-  padding: 0;/**missing**/
+  padding-bottom: 1em;
 }
+.top-image img {
+  max-width: 620px;
+}
+.top-info h1 {
+  font-size: 2.25em;
+  line-height: 1;
+  margin: 0;
+}
+
 .sidebar {
   clear: none;
   width: 35.5%;/**30**/
@@ -593,6 +637,7 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   clear: both;
   float: none;
   border-right: none;
+  border-top: 1px solid #bdbdbd;
   }
   .feed-info p {
     display: block;
@@ -611,6 +656,10 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   width: 70%;
   float: left;
 }
+.feed-info h2 {
+  font-size: 1.315em;
+  line-height: 1.3;
+}
 
 
 /*************** Footer ***********************/
@@ -621,19 +670,31 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
 .contact-info {
   width: 42%;
 }
+.contact-info h1, .mission h1, .team h1 {
+  font-size: 1.875em;
+}
+.contact-info ul li {
+  font-size: 1.3125em;
+  line-height: 1.15;
+}
 .team-member {
   width: 100%;
 }
 .team-img {
   width: 25%;
+  padding-bottom: 25%;
   float: left;
+  padding-right: 5%;
 }
 .team-name, .team-title, .team-description {
-  width: 75%;
+  width: 68%;
   float: left;
 }
+.team-name {
+  font-size: 1.5em;
+  line-height: 1.125;
+}
 .team-description {
-  clear: both;
   display: block;
 }
 /****************** FAQs ***********************/
