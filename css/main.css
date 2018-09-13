@@ -96,50 +96,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/** **/
    body, html {
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
-        color: #000000;
+        color: #222;
         background-color: #eeeeee;
   }
     a {
      font-weight: 700;
-     color: #222222;
+     color: #222222; /**#23a4cc in sample -- light blue**/
      text-decoration: none;
-
-     font-size: 1.2em;
-
+     font-size: 1.2em; /** not in sample**/
    }
-   ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
 
-   }
-   li {
-        text-align: center;
-         padding: 1em;
-         border-bottom: 1px solid #bdbdbd;
-   }
    p {
      font-size: 1em;
-     line-height: 1.4em;
-
-}
+     line-height: 1.4;
+   }
 
 img {
+  width: 100%;
+  height: auto;
 
 }
 
 h1, h2, h3, h4 {
   font-weight: 700;
-
 }
 
 h1 {
-  font-size: 1.3125em;
+  font-size: 1.3125em;/**1.4 and 1.6 in sample**/
   line-height: 1.375;
-
 }
 
 h2 {
@@ -150,32 +138,25 @@ h3 {
 }
 
 figure {
-
+  margin: 0;
 }
 
 .btn {
+  background-color: #ff1256; /**ample code has other color here**/
+  border: none;
   color: #ffffff;
   font-weight: 700;
-  text-align: center;
-  text-transform: capitalize;
   line-height: 2.5;
+  text-align: center;
+  text-transform: uppercase;
   height: 2.5em;
   width: 100%;
-  background-color: #ff1256;
-  box-shadow: 0 2px 2px 0 #d19aaa;
+  box-shadow: 2px 2px 0 #d19aaa;
   display: block;
-  margin-top: 10px;
-
 
 }
 
-input  {
-  width: 96%;
-  padding: 1px 6px;
-  height: 2.1em;
-  background-color: transparent;
 
-}
 
 
 /******Home moblie styling****************/
@@ -183,18 +164,29 @@ input  {
 
 .main-header {
   width: 100%;
+  background-color: #eee;
+  margin: auto;
 }
 .logo {
   width: 100%;
-  margin: 0;
-  text-align: center;
-  height: 4.5em;
-  padding-top: 1.5em;
-  background-color: #222222;
+  margin: 0 auto;
+  height: 4.5em;/**not in sample**/
+  padding-top: 1.5em;/**not in sampe**/
+  background-color: #222222;/**not in sample**/
 }
 nav {
   width: 100%;
-  background-color: #dddddd;
+  background-color: #dddddd;/**not in sample**/
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;/**not in sample**/
+    padding: 0;
+  }
+  li {
+   text-align: center;
+   padding: 1em;/**15px 0**/
+   border-bottom: 1px solid #bdbdbd;/**ccc*/
   }
 
 /**nav ul li{}==*/
@@ -210,14 +202,41 @@ main {
 
 .top-story {
   width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+}
+.top-img {
+  width: 100%;
+  margin: 0;
 }
 
-/**.top-img {}*/
 /*** ============= Sidebar ===============***/
 .sidebar {
   width: 100%;
 }
 
+.sidebar-newsletter {
+
+  padding: 0 10px 20px 10px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.sidebar-newsletter input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-newsletter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+/**not in sample
+input  {
+  width: 96%;
+  padding: 1px 6px;
+  height: 2.1em;
+  background-color: transparent;
+}**/
 .sidebar-about-us {
   display: none;
 }
@@ -227,50 +246,57 @@ main {
 /*** ============= News Feed ===============***/
 .feed {
   width: 100%;
-
 }
 
 .feed-item {
-  width: 100%;
-  margin: 0;
+  clear:both;
   border-bottom: 1px solid #bdbdbd;
-  padding: 1em 0;
+  padding-bottom: 1em;
 }
-
+.feed-type {
+  text-transform: uppercase;
+}
 .feed-img {
+  float:left;
+  margin: 0;
+  padding-right: 3%;
   width: 45%;
+}
+.feed-item h2 {
+  margin: 0;
 }
 .feed-info a {
   font-size: 1em;
 }
-
-/*.feed-info h3{
-  width: 50%;
-  margin-left: 5px;
-}*/
 .feed-info p {
   display: none;
+}
+.last-item {
+     border-bottom: none;
 }
 /*** ============= Footer ===============***/
 
 footer {
+  clear: both;
   width: 100%;
   margin: auto;
+  margin-top: 20px;
   padding-top: 2em;
-    border-top: 1px solid #bdbdbd;
+  border-top: 1px solid #bdbdbd;
 }
 
 .footer-logo {
   width: 47.5%;
   margin: auto;
-  background-color: #222222;
-  padding-top: 1em;
+  background-color: #222222;/**not in sample**/
+  padding-top: 1em;/**not in sample**/
 }
 /************About Mobile Styling*******************/
 .contact-info {
   width: 100%;
+  padding-top: 30px;
 }
-
+/**sample includes only contact-info above**/
 .contact-info ul {
   padding: 0;
 }
@@ -295,8 +321,6 @@ footer {
 }
 .team {
   height: 300px;
-
-
 }
 .team-member {
   margin: 0;
@@ -312,13 +336,11 @@ footer {
   .team-description {
     display: none;
   }
-/*********FAQ mobile styling*****/
-.faq-title {
-  font-size: 1.2em;
-}
+/*********FAQ mobile styling*****/ /**not in sample**/
+
 .faqs-item {
   border-bottom: 1px solid #bdbdbd;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 /* ==========================================================================
@@ -411,10 +433,11 @@ footer {
     /*========== tablet styles here ===================== */
     /*************** header ****************************/
     .main-header  {
-      margin: 0;
+      margin: auto;
       padding: 0 3%;
-      width: 100%
-    }
+      width: 100%;
+      }
+
     .main-header .header-wrapper {
       max-width: 960px;
       margin: 0 auto;
@@ -427,8 +450,9 @@ footer {
      nav {
         width: 60%;
         float: left;
-        padding: 2.2em 0;
+        padding: 2.2em 0;/**not in sample**/
     }
+    /**nav detail not in sample**/
     nav ul li {
        display:inline;
        padding-right: 6%;
@@ -450,14 +474,14 @@ footer {
 
 /******************* Featured Story **********************/
 .top-story {
-  width: 96%;
-  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+  /**not in sample**/
+
   padding: 2%;
   float: left;
 }
 .top-image {
   width: 57%;
-  margin: 0;
   padding-right: 3%;
   float: left;
 }
@@ -468,44 +492,58 @@ footer {
 /******************* Sidebar ******************/
 .sidebar {
   clear: both;
-  width: 38%;
+  width: 38%;/**37**/
   float: right;
 }
 .sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
   display: block;
-  border-bottom: 1px solid #bdbdbd;
-  padding: 10px;
+  padding: 0 0 20px 10px;/**missing**/
 }
+.sidebar-about-us, .sidebar-faqs {
+border-bottom: 1px solid #bdbdbd;/**missig**/
+}
+.sidebar-about-us .btn, .sidebar-faqs .btn {
+  background-color: #b21e49;
 
-
+}
 /******************** News Feed ***************************/
 .feed {
   width: 58%;
-  float: right;
-  border-right: 1px solid #bdbdbd;
+  float: left;
+  border-right: 1px solid #bdbdbd;/**missing**/
 }
 .feed-img {
   width: 35%;
 }
 .feed-info {
-  width: 57%;
-}
-.footer {
   width: 100%;
-  clear: both;
+  margin: 0;
+}
+
 }
 .footer-logo {
-  width: 25%;
-  clear: both;
+  width: 25%;/**30**/
+  margin: auto;
 }
 
 /********************* About Us *****************/
+
+/**sample only includes contact-into width**/
+.nav-about a {
+  color: #ff1256;
+}
+
 .contact-info {
   width: 37%;
   float: left;
+  padding: 2em 0;
+
 }
 .mission {
   clear: both;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 2em 0;
 }
 .team {
   width: 100%;
@@ -518,51 +556,68 @@ footer {
   width: 75%;
   float: left;
 }
+/**************** FAQ ***********************/
+.faq-title {
+  padding-top: 2em;
+}
+
+.nav-faqs a{
+  color: #ff1256;
+}
 }
 /*==================== Desktop Styles================================*/
 @media only screen and (min-width: 940px) {
 
 /************* Hero Area *********************/
 .hero-area {
-  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
 }
 .top-story {
-  width: 62.5%;
+  width: 60.5%;/**65**/
+  float: left;
+  border-bottom: none;
 }
 
 .top-image, .top-info {
   width: 100%;
-  padding: 0;
+  padding: 0;/**missing**/
 }
 .sidebar {
   clear: none;
-  width: 37.5%;
-  float: left;
+  width: 35.5%;/**30**/
+  float: right;
 }
 /******************* News Feed *****************/
 .feed {
   width: 100%;
   clear: both;
-}
+  float: none;
+  border-right: none;
+  }
+  .feed-info p {
+    display: block;
+    margin-top: 0;
+  }
+  .feed-item {/**missing**/
+    float: left;
+  }
+
 .feed-img {
   width: 22%;
+  /**below missing**/
   float: left;
 }
 .feed-info {
   width: 70%;
   float: left;
 }
-.feed-info p {
-  display: block;
-}
-.feed-type {
-  clear: left;
-}
+
+
 /*************** Footer ***********************/
 .footer-logo {
-  width: 16%;
+  width: 16%;/**20**/
 }
-/*************** About ************************/
+/*************** About ************************//**missing**/
 .contact-info {
   width: 42%;
 }
@@ -574,8 +629,8 @@ footer {
   float: left;
 }
 .team-name, .team-title, .team-description {
-  width: 75%
-  float: left
+  width: 75%;
+  float: left;
 }
 .team-description {
   clear: both;
