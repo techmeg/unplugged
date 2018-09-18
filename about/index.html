@@ -14,6 +14,9 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <!-- icons font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
 </head>
@@ -25,20 +28,21 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header class="main-header">
+  <header class="main-header clearfix">
+
     <div class="header-wrapper">
+
       <figure class="logo">
-        <a href="#"><img src="../img/unplugged.png" alt="unplugged logo"/></a>
+        <a href="../index.html"><img src="../img/unplugged.png" alt="unplugged logo"/></a>
       </figure>
       <nav>
-        <ul class="nav-about">
-          <li><a href="about/index.html">ABOUT US</a></li>
-        </ul>
-        <ul class="nav-faqs">
-          <li><a href="faqs/index.html">FAQs</a></li>
+        <ul>
+            <li><a href="#"><i class="fas fa-users"></i>About Us</a></li>
+            <li><a href="../faqs/index.html"><i class="fas fa-question-circle"></i>FAQs</a></li>
         </ul>
       </nav>
     </div>
+
   </header>
 
   <main>
@@ -49,17 +53,15 @@
         <li class="strong">E-mail:</li>
         <li>hello@unplugged.com</li>
       </ul>
-        <br/>
       <ul>
         <li class="strong">Telephone:</li>
         <li>(555)555-5555</li>
       </ul>
-        <br/>
       <ul>
         <li class="strong">Address:</li>
         <li>100 Front Street <br> Brooklyn, NY 11220 </li>
       </ul>
-    </div>
+    </div> <!--contact info -->
 
     <div class="map-container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12084.636889128806!2d-73.9810847!3d40.7805136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe4c054e618c6d3b8!2sBeacon+Theatre!5e0!3m2!1sen!2sus!4v1536960789104" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -77,6 +79,7 @@
       <div class="team">
 
         <h1>Meet the Team</h1>
+
         <div class="team-member clearfix">
 
           <div class="team-img" id="team-img-jack"></div>
@@ -110,7 +113,7 @@
 
     <footer>
       <figure class="footer-logo">
-        <a href="#"><img src="../img/unplugged.png" alt="unplugged logo"/></a>
+        <img src="../img/unplugged.png" alt="unplugged logo"/>
       </figure>
     </footer>
 

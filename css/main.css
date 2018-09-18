@@ -105,10 +105,9 @@ textarea {
   }
     a {
      font-weight: 700;
-     color: #222222; /**#23a4cc in sample -- light blue**/
+     color: #23a4cc;
      text-decoration: none;
-     font-size: 1.2em; /** not in sample**/
-   }
+      }
 
    p {
      font-size: 1em;
@@ -126,15 +125,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.3125em;/**1.4 and 1.6 in sample**/
-  line-height: 1.375;
+  font-size: 1.4em;/**why? this is bigger than comp**/
+  line-height: 1.6;
 }
 
 h2 {
   font-size: 1em;
-}
-h3 {
-  font-size: .625em;
 }
 
 figure {
@@ -142,24 +138,24 @@ figure {
 }
 
 .btn {
-  background-color: #ff1256; /**ample code has other color here**/
+  background-color: #b21e49;
   border: none;
   color: #ffffff;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 2.5;
   text-align: center;
-  text-transform: uppercase;
+  box-shadow: 2px 2px 0 #d19aaa;/**sample #DADADA;**/
   height: 2.5em;
   width: 100%;
-  box-shadow: 2px 2px 0 #d19aaa;
   display: block;
 }
-img {
-  width: 100%;
-  height: auto;
+input.btn {
+  background-color: #ff1256;
 }
+
 .last-item {
-     border-bottom: none;
+     border-bottom: none !important;
 }
 
 /******Home moblie styling****************/
@@ -173,34 +169,40 @@ img {
 .logo {
   width: 100%;
   margin: 0 auto;
-  /**height: 4.5em;/**not in sample**/
-  padding: .75em;/**not in sampe**/
-  background-color: #222222;/**not in sample**/
+  /**background-color: #222222;not in sample**/
 }
 .logo img {
   width: 100%;
 }
 nav {
   width: 100%;
-  background-color: #dddddd;/**not in sample**/
+  /**background-color: #dddddd; not in sample**/
   }
-  ul {
-    list-style-type: none;
-    margin: 0;/**not in sample**/
+  nav ul {
+    list-style: none;
     padding: 0;
   }
-  li {
+  nav ul li {
    text-align: center;
-   padding: 1em;/**15px 0**/
+   padding: 15px 0;
    border-bottom: 1px solid #bdbdbd;/**ccc*/
   }
+  nav ul li a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #333;
+  }
+  nav i {
+    padding-right: 10px;
+  }
 
-/**nav ul li{}==*/
+
 /*** =============Main Content ===============***/
 main {
   width: 96%;
   padding: 0 2%;
   margin: auto;
+  max-width: 960px;
   clear: both;
 }
 /*** ============= Featured News Story ===============***/
@@ -217,7 +219,7 @@ main {
 }
 .top-image img {
   width: 100%;
-  border: 1px solid black;
+  /**border: 1px solid black;** not in sample*/
 }
 /*** ============= Sidebar ===============***/
 .sidebar {
@@ -225,8 +227,7 @@ main {
 }
 
 .sidebar-newsletter {
-
-  /**padding: 0 10px 20px 10px;**/
+  padding: 0 10px 20px 10px;
   border-bottom: 1px solid #bdbdbd;
 }
 
@@ -240,64 +241,60 @@ main {
   padding: 5px 0;
 }
 
-.sidebar-about-us {
+.sidebar-about-us, .sidebar-faqs {
   display: none;
 }
-.sidebar-faqs {
-  display: none;
-}
+
 /*** ============= News Feed ===============***/
 .feed {
   width: 100%;
 }
-
+.feed p {
+  display: none;
+}
 .feed-item {
   clear:both;
   border-bottom: 1px solid #bdbdbd;
-  padding-bottom: 1em;
+  padding-bottom: 15px;
 }
 .feed-type {
   text-transform: uppercase;
+  font-size: 0.8em;
 }
+
+.feed-item h2 {
+    margin: 0;
+}
+.feed-item h2 a {
+   color: #222;
+}
+
 .feed-img {
   float:left;
-  margin-right: 3%;
-  width: 45%;
-  border: 1px solid #bdbdbd;
-}
-.feed-item h2 {
-  line-height: 1em;
   margin: 0;
-}
-.feed-info a {
-  font-size: 1em;
-}
-.feed-info p {
-  display: none;
+  width: 45%;
+  padding-right: 3%;
+  /**border: 1px solid #bdbdbd;not in sample**/
 }
 
-/*** ============= Footer ===============***/
 
-footer {
-  clear: both;
-  width: 100%;
-  margin: auto;
-  margin-top: 20px;
-  padding-top: 2em;
-  border-top: 1px solid #bdbdbd;
-}
 
-.footer-logo {
-  width: 47.5%;
-  margin: auto;
-  background-color: #222222;/**not in sample**/
-  padding-top: 1em;/**not in sample**/
-}
 /************About Mobile Styling*******************/
 .contact-info {
   width: 100%;
-  padding: 30px 0 20px 0;
+  padding-top: 30px;
 }
+
+.contact-info ul {
+  padding: 0;
+  list-style: none;
+}
+
+.contact-info ul li {
+  display: inline-block;
+  vertical-align: top;
+  }
+
 .map-container {
   position: relative;
   padding-bottom: 75%;
@@ -305,6 +302,7 @@ footer {
   overflow: hidden;
 /**  border: 2px solid #bdbdbd;**/
 }
+
 .map-container iframe {
   position: absolute;
   height: 100%;
@@ -313,38 +311,19 @@ footer {
   left: 0;
   }
 
-/**sample includes only contact-info above**/
-.contact-info ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.contact-info ul li {
-  display: inline;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 0;
-  line-height: 2em;
-  text-align: left;
-  border-bottom: none;
-}
-.contact-info h1 {
-  line-height: 1.125;
-  }
-.contact-info ul li {
-  line-height: 1.125;
-}
 .strong {
   font-weight: 700;
-  font-size: 1em;
-}
-.team {
-  height: 300px;
-}
-.team-member {
-  margin: 0;
-  padding: 1em 0;
   }
+
+  .mission {
+    width: 100%;
+  }
+
+.team-member {
+  clear: both;
+  padding: 15px 0;
+  }
+
   .team-img {
     width: 40%;
     padding-bottom: 40%;
@@ -352,6 +331,17 @@ footer {
     margin-right: 20px;
     border: 1px solid #bdbdbd;
   }
+  .team-name {
+     margin-bottom: 0;
+  }
+
+  .team-title {
+     margin-top: 0;
+  }
+  .team-description {
+    display: none;
+  }
+
   #team-img-jack {
     background: url('../img/jack.png') center no-repeat;
     background-size: cover;
@@ -364,23 +354,35 @@ footer {
     background: url('../img/willow.png') center no-repeat;
     background-size: cover;
   }
-  .team-name, .team-title {
-    width: 50%;
-    margin: 0;
-    float:left;
-  }
-  .team-description {
-    display: none;
-  }
+
+
+
 /*********FAQ mobile styling*****/ /**not in sample**/
 
 .faqs-item {
   border-bottom: 1px solid #bdbdbd;
-  padding-bottom: 1em;
+  }
+
+.faqs-item h2 {/** h3?**/
+  font-weight: 400;
+  }
+
+/*** ============= Footer ===============***/
+
+footer {
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid #bdbdbd;
+  margin-top: 20px;
+  padding-top: 20px;
+  clear: both;
 }
-.faqs-item h2 {
-  font-weight: normal;
-  font-size: 1em;
+
+.footer-logo {
+  width: 47.5%;
+  margin: auto;
+  /**background-color: #222222; not in sample**/
+  /**padding-top: 1em; not in sample**/
 }
 
 /* ==========================================================================
@@ -471,6 +473,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     /*========== tablet styles here ===================== */
+
     /*************** header ****************************/
     .main-header  {
       margin: auto;
@@ -484,104 +487,98 @@ footer {
       margin: 0 auto;
       width: 94%
     }
+
     .logo {
-        width: 36%;
+        width: 40%;
         float: left;
+    }
+
+    .logo img {
+      max-width: 312px;
     }
      nav {
         width: 60%;
         float: left;
-        padding: 1.875em 0;/**not in sample**/
+
     }
-    /**nav detail not in sample**/
+    nav ul {
+      margin: 0;
+      padding: 40px 0;
+      text-align: center;
+    }
+
     nav ul li {
        display:inline;
-       padding-right: 6%;
+       padding: 0 2%;
        border: none;
+       position: relative; /**why?**/
      }
-    .nav-about {
-      width: 50%;
-      text-align: right;
-      margin: auto;
-      float: left;
-    }
-    .nav-faqs {
-     width: 50%;
-     text-align: left;
-     margin: auto;
-     float: left;
-}
+
 
 
 /******************* Featured Story **********************/
 .top-story {
   width: 100%;
-  /**not in sample**/
-  padding: 2% 2% 2% 0;
-  float: left;
-}
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+
 .top-image {
   width: 57%;
   float: left;
   padding-right: 3%;
 }
 .top-info {
-  width: 37%;
+  width: 40%;
   float: left;
 }
 
 /******************* Sidebar ******************/
 .sidebar {
   clear: both;
-  width: 38%;/**37**/
+  width: 37%;
   float: right;
 }
-.sidebar-newsletter, .sidebar-about-us, .sidebar-faqs {
-  display: block;
-  /**padding: 0 0 20px 10px;/**missing**/
-}
-.sidebar-about-us, .sidebar-faqs {
-border-bottom: 1px solid #bdbdbd;/**missig**/
-}
-.sidebar-about-us .btn, .sidebar-faqs .btn {
-  background-color: #b21e49;
 
+.sidebar-about-us, .sidebar-faqs {
+  display: block;
+  padding: 0 10px 20px 10px;
+  border-bottom: 1px solid #bdbdbd;
 }
+
 /******************** News Feed ***************************/
 .feed {
-  width: 58%;
+  width: 60%;
   float: left;
-  border-right: 1px solid #bdbdbd;/**missing**/
+  border-right: 1px solid #bdbdbd;
 }
+.feed h2 {
+  font-size:1.125em;
+}
+
 .feed-img {
   width: 35%;
 }
+
+.feed-item: {
+  padding-right: 20px;
+}
+
 .feed-info {
-  width: 100%;
-  margin: 0;
-}
-.feed-info h2 {
-  font-size: 1.1em;
-  line-height: 1.2;
-  padding-right: 10px;
-}
-.footer-logo {
-  width: 25%;/**30**/
-  margin: auto;
-}
+  width: 57%;
+  }
+
+
 
 /********************* About Us *****************/
 
 /**sample only includes contact-into width**/
-.nav-about a {
-  color: #ff1256;
-}
 
 .contact-info {
-  width: 37%;
+  width: 40%;
   float: left;
-  padding: 2em 0;
-}
+  }
+
 .map-container {
   position: relative;
   padding-bottom: 40%;
@@ -593,143 +590,158 @@ border-bottom: 1px solid #bdbdbd;/**missig**/
   margin-bottom: 40px;
   margin-top: 30px;
 }
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .mission {
   clear: both;
   border-top: 1px solid #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
-  padding: 1em 0 2em 0;
+  padding: 15px 0;
 }
-.mission h1, .team h1 {
+/**.mission h1, .team h1 {
   font-size: 1.5em;
   line-height: 1.125;
-}
+}**/
+
 .team {
-  width: 100%;
-}
-.team-member {
-  padding: 2em 0;
-}
-.team-img {
-  width: 14%;
-  padding-bottom: 14%;
-  float: left;
-}
-.team-name, .team-title {
-  width: 69%;
-  float: left;
-}
-.team-name {
-  font-size: 1.125em;
-  line-height: 1.125;
-}
-/**************** FAQ ***********************/
-.faq-title {
-  padding-top: 2em;
+  padding-top: 15px;
 }
 
-.nav-faqs a{
-  color: #ff1256;
+.team-member {
+  padding: 15px 0;
 }
+.team-img {
+  width: 20%;/** 14%?**/
+  padding-bottom: 20%; /** 14%? **/
+  margin-right: 10%;
+}
+
+/**.team-name {
+  font-size: 1.125em;
+  line-height: 1.125;
+}**/
+
+/************ footer**************/
+.footer-logo {
+  width: 25%;/**30**/
+  margin: auto;
+}
+
 }
 /**==================== Desktop Styles================================**/
 @media only screen and (min-width: 940px) {
+
+  h1 {
+    font-size: 1.6em;
+    line-height: 1.8;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
 .main-header{
   background-color: #dddddd;
 }
+/** featured story **/
+
 .top-story {
-  width: 60.5%;/**65**/
+  width: 65%;
   float: left;
-  border-bottom: none;
+  border: none;
+  padding-right: 2%;
 }
 
-.top-image, .top-info {
+.top-image {
   width: 100%;
   padding-bottom: 1em;
 }
+
 .top-image img {
   max-width: 620px;
 }
-.top-info h1 {
-  font-size: 2.25em;
-  line-height: 1;
-  margin: 0;
+
+.top-info {
+  width: 100%;
+  float: none;
 }
+/**  sidebar ********************/
 
 .sidebar {
   clear: none;
-  width: 35.5%;/**30**/
+  width: 30%;
   float: right;
+  border-left: 1px solid #bdbdbd;
 }
+
+.sidebar-newsletter,
+.sidebar-about-us,
+.sidebar-faqs {
+  padding: 0 20px 20px 20px;
+}
+
+.sidebar-faqs {
+  border: none;
+}
+
 /******************* News Feed *****************/
 .feed {
   width: 100%;
   clear: both;
   float: none;
+  padding-top: 20px;
   border-right: none;
   border-top: 1px solid #bdbdbd;
   }
+
   .feed-info p {
     display: block;
     margin-top: 0;
   }
-  .feed-item {/**missing**/
-    float: left;
+
+  .feed h2 {
+    margin; 0;
   }
 
 .feed-img {
-  width: 22%;
-  /**below missing**/
-  float: left;
-}
-.feed-info {
-  width: 70%;
-  float: left;
-}
-.feed-info h2 {
-  font-size: 1.315em;
-  line-height: 1.3;
+  width: 20%;
 }
 
+/**.feed-info h2 {
+  font-size: 1.315em;
+  line-height: 1.3;
+}**/
+
+
+
+/*************** About ************************//**missing**/
+.team-member {
+  padding: 15px 0;
+}
+
+.team-img {
+  margin-right: 5%;
+}
+.team-name {
+  margin-top: 0;
+/**  font-size: 1.5em;
+  line-height: 1.125;**/
+}
+.team-description {
+  display: block;
+}
 
 /*************** Footer ***********************/
 .footer-logo {
   width: 16%;/**20**/
 }
-/*************** About ************************//**missing**/
-.contact-info {
-  width: 42%;
 }
-.contact-info h1, .mission h1, .team h1 {
-  font-size: 1.875em;
-}
-.contact-info ul li {
-  font-size: 1.3125em;
-  line-height: 1.15;
-}
-.team-member {
-  width: 100%;
-}
-.team-img {
-  width: 25%;
-  padding-bottom: 25%;
-  float: left;
-  padding-right: 5%;
-}
-.team-name, .team-title, .team-description {
-  width: 68%;
-  float: left;
-}
-.team-name {
-  font-size: 1.5em;
-  line-height: 1.125;
-}
-.team-description {
-  display: block;
-}
-/****************** FAQs ***********************/
-
-}
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
