@@ -125,12 +125,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.4em;/**why? this is bigger than comp**/
-  line-height: 1.6;
+  font-size: 1.3125em;
+  line-height: 1.1;
 }
 
 h2 {
   font-size: 1em;
+  line-height: 1;
 }
 
 figure {
@@ -176,23 +177,33 @@ input.btn {
 }
 nav {
   width: 100%;
-  /**background-color: #dddddd; not in sample**/
+  background-color: #dddddd;
   }
   nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   nav ul li {
    text-align: center;
    padding: 15px 0;
    border-bottom: 1px solid #bdbdbd;/**ccc*/
   }
+  /**** turn nav to pink when visited ***/
+  /**nav ul li a:link, **/nav ul li a:visited {
+    color: #ff1258;
+  }
   nav ul li a {
     font-size: 1.125em;
     text-transform: uppercase;
     color: #333;
   }
-  nav i {
+
+  /**a.about:link, a.about:visited {
+    color: #ff1258;
+  }**/
+
+   i {
     padding-right: 10px;
   }
 
@@ -201,7 +212,7 @@ nav {
 main {
   width: 96%;
   padding: 0 2%;
-  margin: auto;
+  margin: 20px auto;
   max-width: 960px;
   clear: both;
 }
@@ -300,7 +311,7 @@ main {
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
-/**  border: 2px solid #bdbdbd;**/
+  border: 2px solid #bdbdbd;
 }
 
 .map-container iframe {
@@ -503,7 +514,7 @@ footer {
     }
     nav ul {
       margin: 0;
-      padding: 40px 0;
+      padding: 27px 0;
       text-align: center;
     }
 
@@ -514,12 +525,16 @@ footer {
        position: relative; /**why?**/
      }
 
+     h1 {
+       font-size: 1.5em;
+       line-height: .95;
+     }
 
 
 /******************* Featured Story **********************/
 .top-story {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-bottom: 40px;
   }
 
@@ -552,21 +567,22 @@ footer {
   float: left;
   border-right: 1px solid #bdbdbd;
 }
-.feed h2 {
+ h2 {
   font-size:1.125em;
+  line-height: 1.1;
 }
 
 .feed-img {
   width: 35%;
 }
 
-.feed-item: {
+.feed-item {
   padding-right: 20px;
 }
 
-.feed-info {
+/**.feed-info {
   width: 57%;
-  }
+  }**/
 
 
 
@@ -604,10 +620,6 @@ footer {
   border-bottom: 1px solid #bdbdbd;
   padding: 15px 0;
 }
-/**.mission h1, .team h1 {
-  font-size: 1.5em;
-  line-height: 1.125;
-}**/
 
 .team {
   padding-top: 15px;
@@ -622,10 +634,10 @@ footer {
   margin-right: 10%;
 }
 
-/**.team-name {
+.team-name {
   font-size: 1.125em;
   line-height: 1.125;
-}**/
+}
 
 /************ footer**************/
 .footer-logo {
@@ -637,13 +649,12 @@ footer {
 /**==================== Desktop Styles================================**/
 @media only screen and (min-width: 940px) {
 
-  h1 {
-    font-size: 1.6em;
-    line-height: 1.8;
+  h2, .strong {
+    font-size: 1.3125em;
   }
+  h1 {
+    font-size: 1.875em;
 
-  h2 {
-    font-size: 1.4em;
   }
 
 .main-header{
@@ -670,6 +681,10 @@ footer {
 .top-info {
   width: 100%;
   float: none;
+}
+.top-info h1 {
+  font-size: 2.25em;
+
 }
 /**  sidebar ********************/
 
@@ -706,21 +721,19 @@ footer {
   }
 
   .feed h2 {
-    margin; 0;
+    margin: 0;
   }
 
 .feed-img {
   width: 20%;
 }
 
-/**.feed-info h2 {
-  font-size: 1.315em;
-  line-height: 1.3;
-}**/
-
-
 
 /*************** About ************************//**missing**/
+
+.contact-info ul li {
+  font-size: 1.3125em;
+}
 .team-member {
   padding: 15px 0;
 }
@@ -730,8 +743,6 @@ footer {
 }
 .team-name {
   margin-top: 0;
-/**  font-size: 1.5em;
-  line-height: 1.125;**/
 }
 .team-description {
   display: block;
